@@ -1,0 +1,11 @@
+@use 'typography' as t;
+@use 'colors' as c;
+
+body, * {
+    font-family: t.$main-font;
+}
+
+body {
+    color: c.$nero;
+    background-color: c.$white;
+}

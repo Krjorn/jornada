@@ -1,0 +1,82 @@
+$main-font: 'Montserrat', sans-serif;
+
+// FONT WEIGHT
+
+$wg-bold: 700;
+$wg-medium: 500;
+$wg-normal: 400;
+
+// FONT SIZE
+
+$t-xl: 3rem;
+$t-l: 2.5rem;
+$t: 2rem;
+$t-sm: 1.75rem;
+$b-xxl: 2rem;
+$b-xl: 1.5rem;
+$b-l: 1.25rem;
+$b: 1rem;
+$st: .875rem;
+
+// STYLES
+
+@mixin title-xl {
+    font-size: $t-xl;
+    font-weight: $wg-bold;
+}
+
+@mixin title-l {
+    font-size: $t-l;
+    font-weight: $wg-bold;
+}
+
+@mixin title {
+    font-size: $t;
+    font-weight: $wg-bold;
+}
+
+@mixin title-sm {
+    font-size: $t-sm;
+    font-weight: $wg-bold;
+}
+
+@mixin body-xxl {
+    font-size: $b-xxl;
+    font-weight: $wg-normal;
+    line-height: 150%;
+}
+
+@mixin body-xl {
+    font-size: $b-xl;
+    font-weight: $wg-normal;
+    line-height: 150%;
+}
+
+@mixin body-l-bold {
+    font-size: $b-l;
+    font-weight: $wg-bold;
+    line-height: 160%;
+}
+
+@mixin body-l {
+    font-size: $b-l;
+    font-weight: $wg-normal;
+    line-height: 160%;
+}
+
+@mixin body {
+    font-size: $b;
+    font-weight: $wg-normal;
+    line-height: 175%;
+}
+
+@mixin subtitle {
+    font-size: $st;
+    font-weight: $wg-normal;
+    line-height: 200%;
+}
+
+@mixin navigation {
+    font-size: $b-xl;
+    font-weight: $wg-medium;
+}

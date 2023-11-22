@@ -1,0 +1,22 @@
+@use '../abstract/typography' as t;
+
+.banner__img--desc {
+    @include t.body-l;
+    max-width: 1200px;
+    text-align: center;
+    margin: 88px auto;
+    padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__img--desc {
+        @include t.body-xxl;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner__img--desc {
+        margin: 112px auto;
+        padding: 0;
+    }
+}

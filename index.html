@@ -37,12 +37,12 @@
     <section class="banner">
         <div class="banner__wrapper">
             <figure class="banner__img--wrapper">
-                <img class="banner__img" alt="Bela imagem das Maldivas" 
-                srcset="assets/img/banner/banner-home-360.png 360w,
-                assets/img/banner/banner-home-768.png 768w,
-                assets/img/banner/banner-home-1440.png 1440w,
-                assets/img/banner/banner-home-1920.png 1920w" 
-                src="assets/img/banner/banner-home-1920.png" />
+                <picture>
+                    <source media="(max-width: 360px)" srcset="assets/img/banner/banner-home-360.png">
+                    <source media="(max-width: 768px)" srcset="assets/img/banner/banner-home-768.png">
+                    <source media="(max-width: 1440px)" srcset="assets/img/banner/banner-home-1440.png">
+                    <img class="banner__img" alt="Homem navegando um rio em uma canoa" src="assets/img/banner/banner-home-1920.png" />
+                </picture>
                 <figcaption class="banner__img--desc">
                     Somos uma agência apaixonada por criar viagens inesquecíveis. Do
                     destino à seleção das atividades, cuidamos de todos os detalhes

@@ -31,14 +31,14 @@
 }
 
 .header__menu[aria-expanded="false"] {
-    background-image: url('../../img/menu.svg');
+    background-image: url('../../img/icons/menu.svg');
     + .header__nav {
         display: none;
     }
 }
 
 .header__menu[aria-expanded="true"] {
-    background-image: url('../../img/close.svg');
+    background-image: url('../../img/icons/close.svg');
     + .header__nav {
         display: block;
     }

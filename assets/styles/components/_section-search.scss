@@ -1,0 +1,61 @@
+@use '../abstract/typography' as t;
+@use '../abstract/colors' as c;
+
+.search__categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 88px;
+    flex-wrap: wrap;
+}
+
+.search__category {
+    min-height: 220px;
+    width: 312px;
+    @include t.title-sm;
+    color: c.$nero;
+    text-align: center;
+    border-radius: 8px;
+    background-color: c.$grey-light;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+}
+
+.search__category--icon {
+    height: 80px;
+    width: 80px;
+    background: center no-repeat;
+}
+
+.search__category--icon.national {
+    background-image: url('../../img/icons/hiking.svg');
+}
+
+.search__category--icon.international {
+    background-image: url('../../img/icons/flight.svg');
+}
+
+.search__category--icon.transfer {
+    background-image: url('../../img/icons/airport_shuttle.svg');
+}
+
+.search__category--icon.safe {
+    background-image: url('../../img/icons/vpn_lock.svg');
+}
+
+
+@media screen and (min-width: 1440px) {
+    .search__categories {
+        margin-bottom: 112px;
+    }
+
+    .search__category {
+        width: 280px;
+    }
+}

@@ -1,3 +1,7 @@
+* {
+  transition: 0.1s ease-in;
+}
+
 body, * {
   font-family: "Montserrat", sans-serif;
 }
@@ -47,12 +51,15 @@ img {
 
 .header__menu {
   padding: 0;
-  border: none;
+  border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
   height: 44px;
   width: 44px;
   background: center no-repeat;
+}
+.header__menu:hover, .header__menu:focus {
+  border-color: #FFFFFF;
 }
 
 .header__menu[aria-expanded=false] {
@@ -128,7 +135,6 @@ img {
 .cta-button {
   min-width: 280px;
   display: inline-block;
-  border: 0;
   border-radius: 8px;
   background-color: #B81515;
   padding: 16px 0;
@@ -278,5 +284,62 @@ img {
   .offers__card--price {
     font-size: 2.5rem;
     font-weight: 700;
+  }
+}
+.search__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 88px;
+  flex-wrap: wrap;
+}
+
+.search__category {
+  min-height: 220px;
+  width: 312px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.search__category--icon {
+  height: 80px;
+  width: 80px;
+  background: center no-repeat;
+}
+
+.search__category--icon.national {
+  background-image: url("../../img/icons/hiking.svg");
+}
+
+.search__category--icon.international {
+  background-image: url("../../img/icons/flight.svg");
+}
+
+.search__category--icon.transfer {
+  background-image: url("../../img/icons/airport_shuttle.svg");
+}
+
+.search__category--icon.safe {
+  background-image: url("../../img/icons/vpn_lock.svg");
+}
+
+@media screen and (min-width: 1440px) {
+  .search__categories {
+    margin-bottom: 112px;
+  }
+  .search__category {
+    width: 280px;
   }
 }/*# sourceMappingURL=home.css.map */

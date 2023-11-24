@@ -4,7 +4,7 @@
 .header {
     width: 100%;
     background-color: c.$black;
-    padding: 2.357rem 3rem;
+    padding: 38px 32px;
 }
 
 .header__wrapper {
@@ -48,7 +48,7 @@
     max-width: 380px;
     background-color: c.$black;
     border: 1px solid c.$white;
-    padding: 2rem;
+    padding: 32px;
     position: absolute;
     right: 0;
     top: 105%;
@@ -71,11 +71,13 @@
     text-decoration: underline;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
     .header {
-        padding: 2.357rem 0;
+        padding: 38px 60px;
     }
+}
 
+@media screen and (min-width: 1440px) {
     .header__logo--icon:first-child {
         display: none;
     }

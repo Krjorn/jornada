@@ -1,0 +1,25 @@
+@use '../abstract/typography' as t;
+@use '../abstract/colors' as c;
+
+.section__title {
+    margin-bottom: 32px;
+}
+
+.section__title--text {
+    @include t.title;
+    text-align: center;
+}
+
+.section__title--underline {
+    width: 180px;
+    height: 4px;
+    background-color: c.$red;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .section__title {
+        margin-bottom: 64px;
+    }
+}

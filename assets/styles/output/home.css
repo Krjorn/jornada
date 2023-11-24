@@ -7,14 +7,29 @@ body {
   background-color: #FFFFFF;
 }
 
-.banner__img {
+img {
   max-width: 100%;
 }
 
+.main {
+  max-width: 1200px;
+  margin: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin: 0 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 0 auto;
+  }
+}
 .header {
   width: 100%;
   background-color: #000000;
-  padding: 2.357rem 3rem;
+  padding: 38px 32px;
 }
 
 .header__wrapper {
@@ -58,7 +73,7 @@ body {
   max-width: 380px;
   background-color: #000000;
   border: 1px solid #FFFFFF;
-  padding: 2rem;
+  padding: 32px;
   position: absolute;
   right: 0;
   top: 105%;
@@ -82,10 +97,12 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .header {
-    padding: 2.357rem 0;
+    padding: 38px 60px;
   }
+}
+@media screen and (min-width: 1440px) {
   .header__logo--icon:first-child {
     display: none;
   }
@@ -106,6 +123,56 @@ body {
     position: static;
     right: 0;
     top: 0;
+  }
+}
+.cta-button {
+  min-width: 280px;
+  display: inline-block;
+  border: 0;
+  border-radius: 8px;
+  background-color: #B81515;
+  padding: 16px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.cta-button:hover, .cta-button:focus {
+  background-color: #8F0101;
+}
+
+.cta-button.changing {
+  min-width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .cta-button.changing {
+    min-width: 280px;
+  }
+}
+.section__title {
+  margin-bottom: 32px;
+}
+
+.section__title--text {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__title--underline {
+  width: 180px;
+  height: 4px;
+  background-color: #B81515;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section__title {
+    margin-bottom: 64px;
   }
 }
 .banner__img--desc {
@@ -129,5 +196,87 @@ body {
   .banner__img--desc {
     margin: 112px auto;
     padding: 0;
+  }
+}
+.offers {
+  margin-bottom: 88px;
+}
+
+.offers__cards--group {
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offers__cards--item {
+  border-radius: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 24px 16px;
+  color: #FFFFFF;
+  flex: 1 0 calc(50% - 48px);
+  text-align: center;
+}
+
+.offers__cards--japan {
+  background-image: url("../../img/offers/japan.png");
+}
+
+.offers__cards--san-andreas {
+  background-image: url("../../img/offers/san-andreas.png");
+}
+
+.offers__cards--paraiba {
+  background-image: url("../../img/offers/paraiba.png");
+}
+
+.offers__cards--manaus {
+  background-image: url("../../img/offers/manaus.png");
+}
+
+.offers__card--destine-type {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.offers__card--destine-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.offers__card--price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .offers {
+    margin-bottom: 112px;
+  }
+  .offers__cards--japan {
+    background-image: url("../../img/offers/japan-large.png");
+  }
+  .offers__cards--san-andreas {
+    background-image: url("../../img/offers/san-andreas-large.png");
+  }
+  .offers__cards--paraiba {
+    background-image: url("../../img/offers/paraiba-large.png");
+  }
+  .offers__cards--manaus {
+    background-image: url("../../img/offers/manaus-large.png");
+  }
+  .offers__card--destine-name {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .offers__card--price {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=home.css.map */

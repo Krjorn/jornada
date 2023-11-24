@@ -10,6 +10,24 @@ body {
     background-color: c.$white;
 }
 
-.banner__img {
+
+img {
     max-width: 100%;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        margin: 0 auto;
+    }
 }

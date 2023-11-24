@@ -1,0 +1,29 @@
+@use '../abstract/typography' as t;
+@use '../abstract/colors' as c;
+
+.cta-button {
+    min-width: 280px;
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    background-color: c.$red;
+    padding: 16px 0;
+    @include t.body-l-bold;
+    color: c.$white;
+    text-align: center;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: c.$red-dark;
+    }
+}
+
+.cta-button.changing {
+    min-width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+    .cta-button.changing {
+        min-width: 280px;
+    }
+}

@@ -22,12 +22,16 @@
 
 .header__menu {
     padding: 0;
-    border: none;
+    border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
     height: 44px;
     width: 44px;
     background: center no-repeat;
+    &:hover,
+    &:focus {
+        border-color: c.$white;
+    }
 }
 
 .header__menu[aria-expanded="false"] {

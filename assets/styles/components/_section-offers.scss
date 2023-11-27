@@ -39,13 +39,13 @@
     background-image: url("../../img/offers/manaus.png");
 }
 
-.offers__card--destine-type {
+.offers__card--destination-type {
     @include t.body-l;
     text-align: center;
     margin-bottom: 8px;
 }
 
-.offers__card--destine-name {
+.offers__card--destination-name {
     @include t.title-l;
 }
 
@@ -75,7 +75,7 @@
         background-image: url("../../img/offers/manaus-large.png");
     }
 
-    .offers__card--destine-name {
+    .offers__card--destination-name {
         @include t.title-xl;
     }
 

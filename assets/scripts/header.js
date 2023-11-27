@@ -7,39 +7,39 @@ headerMenuBtn.addEventListener('click', function(e) {
 
     if(this.ariaExpanded === 'false') {
         this.ariaExpanded = true;
-        this.ariaLabel = 'Esconder menu de navegação';
         navItems[0].focus();
     } else {
-        closeHeaderNav();
+        headerMenuBtn.ariaExpanded = false;
     }
 });
 
-headerNav.addEventListener('keydown', function(e) {
+headerNav.addEventListener('keyup', function(e) {
     if(window.innerWidth < 1440) {
         if(e.code === 'Escape') {
-            closeHeaderNav();
+            headerMenuBtn.ariaExpanded = false;
             headerMenuBtn.focus();
         }
     }
 });
 
-headerNav.addEventListener('click', e => {
+headerNav.addEventListener('click', function(e) {
     e.stopPropagation();
 });
 
-document.addEventListener('click', closeHeaderNav);
-document.addEventListener('keyup', e => {
+document.addEventListener('click', () => {
+    headerMenuBtn.ariaExpanded = false;
+});
+document.addEventListener('keyup', function(e) {
     if(e.code === 'Tab') {
         if(!navIsActive()) {
-            closeHeaderNav();
+            headerMenuBtn.ariaExpanded = false;
         }
     }
 });
 
-function closeHeaderNav() {
-    headerMenuBtn.ariaExpanded = false;
-    headerMenuBtn.ariaLabel = 'Exibir menu de navegação';
-}
+// function closeHeaderNav() {
+//     headerMenuBtn.ariaExpanded = false;
+// }
 
 function navIsActive() {
     let active = false;

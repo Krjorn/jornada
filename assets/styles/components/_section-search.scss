@@ -1,12 +1,15 @@
 @use '../abstract/typography' as t;
 @use '../abstract/colors' as c;
 
+.search {
+    margin-bottom: 88px;
+}
+
 .search__categories {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    margin-bottom: 88px;
     flex-wrap: wrap;
 }
 
@@ -51,7 +54,7 @@
 
 
 @media screen and (min-width: 1440px) {
-    .search__categories {
+    .search {
         margin-bottom: 112px;
     }
 

@@ -69,8 +69,6 @@
     @include t.navigation;
 }
 
-.header__nav--item:hover,
-.header__nav--item:focus,
 .header__nav--active {
     text-decoration: underline;
 }

@@ -2,7 +2,7 @@
 @use '../abstract/colors' as c;
 
 .cta-button {
-    min-width: 280px;
+    width: 280px;
     display: inline-block;
     border-radius: 8px;
     background-color: c.$red;
@@ -18,11 +18,11 @@
 }
 
 .cta-button.changing {
-    min-width: 312px;
+    width: 312px;
 }
 
 @media screen and (min-width: 768px) {
     .cta-button.changing {
-        min-width: 280px;
+        width: 280px;
     }
 }

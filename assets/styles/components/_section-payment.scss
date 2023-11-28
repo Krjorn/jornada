@@ -1,0 +1,48 @@
+@use '../abstract/typography' as t;
+
+.payment {
+    margin-bottom: 88px;
+}
+
+.payment__images--group,
+.payment__conditions {
+    display: flex;
+    gap: 24px;
+}
+
+.payment__conditions {
+    flex-wrap: wrap;
+}
+
+.payment__conditions--title {
+    @include t.title-l;
+    margin-bottom: 24px;
+}
+
+.payment__conditions--subtitle {
+    @include t.title-sm;
+    margin-bottom: 24px;
+}
+
+.payment__conditions--details {
+    @include t.body-l;
+    max-width: 100%;
+}
+
+.payment__images--image {
+    flex: 1;
+}
+
+.payment__images--image.highlight {
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .payment {
+        margin-bottom: 112px;
+    }
+
+    .payment__conditions--desc {
+        max-width: 384px;
+    }
+}

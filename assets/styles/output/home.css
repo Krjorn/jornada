@@ -437,4 +437,59 @@ img {
   .payment__conditions--desc {
     max-width: 384px;
   }
+}
+.testimonials {
+  margin-bottom: 88px;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.testimonials__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonials__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.testimonials__author {
+  margin-top: 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 86px 1fr;
+  gap: 8px 24px;
+}
+
+.testimonials__author--picture {
+  max-width: 86px;
+  grid-area: 1/1/3/2;
+}
+
+.testimonials__author--name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    margin-bottom: 112px;
+  }
+  .testimonials__wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
 }/*# sourceMappingURL=home.css.map */

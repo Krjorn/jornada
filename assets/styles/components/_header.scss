@@ -69,7 +69,7 @@
     @include t.navigation;
 }
 
-.header__nav--active {
+.header__nav--item.active {
     text-decoration: underline;
 }
 

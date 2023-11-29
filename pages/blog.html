@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornada - Blog</title>
-    <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/icons/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/abstract/reset.css">
+    <link rel="stylesheet" href="../assets/styles/output/blog.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="../index.html" class="header__logo" aria-label="Jornada home">
+                <img class="header__logo--icon" alt="Logo da Jornada" src="../assets/img/logos/logo-white-icon.svg">
+                <img class="header__logo--icon" alt="Logo da Jornada" src="../assets/img/logos/logo-white.svg">
+            </a>
+            <button class="header__menu" aria-expanded="false" aria-controls="header-nav" aria-label="Expandir menu de navegação" data-header-menu></button>
+            <nav class="header__nav" id="header-nav" role="navigation" aria-label="Navegação principal" data-header-nav>
+                <ul class="header__nav--list">
+                    <li>
+                        <a class="header__nav--item active" href="blog.html" data-nav-item>Blog</a>
+                    </li>
+                    <li>
+                        <a class="header__nav--item" href="destine.html" data-nav-item>Pacotes de viagem</a>
+                    </li>
+                    <li>
+                        <a class="header__nav--item" href="contact.html" data-nav-item>Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="../assets/scripts/header.js"></script>
 </body>
 </html>

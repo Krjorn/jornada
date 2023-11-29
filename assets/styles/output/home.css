@@ -103,7 +103,7 @@ img {
   font-weight: 500;
 }
 
-.header__nav--active {
+.header__nav--item.active {
   text-decoration: underline;
 }
 

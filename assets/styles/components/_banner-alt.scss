@@ -1,0 +1,58 @@
+@use '../abstract/typography' as t;
+@use '../abstract/colors' as c;
+
+.banner {
+    min-height: 460px;
+    background-color: c.$black;
+    color: c.$white;
+    position: relative;
+}
+
+.banner__img {
+    width: 100%;
+    display: block;
+}
+
+.banner__content--wrapper {
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 0 7vw;
+}
+
+.banner__title {
+    margin-bottom: 32px;
+}
+
+.banner__title--text {
+    @include t.title-xl;
+}
+
+.banner__title--underline {
+    width: 180px;
+    height: 4px;
+    background-color: c.$red;
+    margin-top: 16px;
+}
+
+.banner__text {
+    @include t.body-l;
+    max-width: 579px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__text {
+        @include t.body-xxl;
+    }
+}
+
+@media screen and (min-width: 1320px) {
+    .banner__content--wrapper {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+}

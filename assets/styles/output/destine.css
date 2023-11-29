@@ -89,6 +89,7 @@ img {
   position: absolute;
   right: 0;
   top: 105%;
+  z-index: 1;
 }
 
 .header__nav--list {

@@ -1,0 +1,54 @@
+@use '../abstract/typography' as t;
+
+.post {
+    margin: 88px 0;
+}
+
+.post__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.post__compound {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    & .post__section,
+    & picture {
+        flex: 0 1 50%;
+    }
+}
+
+.post__section--title {
+    @include t.title-sm;
+    margin-bottom: 24px;
+}
+
+.post__section--text {
+    @include t.body-l;
+}
+
+.post__image {
+    margin-bottom: 8px;
+}
+
+.post__image--desc {
+    @include t.subtitle;
+}
+
+@media screen and (min-width: 768px) {
+    .post__compound {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .post {
+        margin: 112px 0;
+    }
+
+    .post__wrapper {
+        gap: 48px;
+    }
+}

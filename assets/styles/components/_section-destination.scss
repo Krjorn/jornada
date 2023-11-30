@@ -16,7 +16,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .destinations__item--name {
@@ -24,9 +23,17 @@
     margin: 24px 0;
 }
 
+.destinations__item--name.alt {
+    margin: 16px 0 8px;
+}
+
 .destinations__item--desc {
     @include t.body-l;
     margin-bottom: 24px;
+}
+
+.destinations__item--desc.alt {
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 768px) {

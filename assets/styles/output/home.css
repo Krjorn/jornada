@@ -374,10 +374,6 @@ img {
   justify-content: center;
 }
 
-.destinations__item--image {
-  max-width: 100%;
-}
-
 .destinations__item--name {
   font-size: 1.75rem;
   font-weight: 700;
@@ -391,6 +387,11 @@ img {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .destinations__item--image {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .destinations {
     margin-bottom: 112px;

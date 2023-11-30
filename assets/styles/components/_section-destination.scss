@@ -19,10 +19,6 @@
     justify-content: center;
 }
 
-.destinations__item--image {
-    max-width: 100%;
-}
-
 .destinations__item--name {
     @include t.title-sm;
     margin: 24px 0;
@@ -31,6 +27,12 @@
 .destinations__item--desc {
     @include t.body-l;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .destinations__item--image {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1440px) {

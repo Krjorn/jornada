@@ -1,7 +1,7 @@
 @use '../abstract/typography' as t;
 
 .post {
-    margin: 88px 0;
+    margin-bottom: 88px;
 }
 
 .post__wrapper {
@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 1440px) {
     .post {
-        margin: 112px 0;
+        margin-bottom: 112px;
     }
 
     .post__wrapper {

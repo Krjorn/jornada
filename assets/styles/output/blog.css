@@ -190,6 +190,7 @@ img {
   background-color: #000000;
   color: #FFFFFF;
   position: relative;
+  margin-bottom: 88px;
 }
 
 .banner__img {
@@ -244,8 +245,13 @@ img {
     padding: 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .banner {
+    margin-bottom: 112px;
+  }
+}
 .post {
-  margin: 88px 0;
+  margin-bottom: 88px;
 }
 
 .post__wrapper {
@@ -292,7 +298,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .post {
-    margin: 112px 0;
+    margin-bottom: 112px;
   }
   .post__wrapper {
     gap: 48px;

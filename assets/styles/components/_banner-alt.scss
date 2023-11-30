@@ -6,6 +6,7 @@
     background-color: c.$black;
     color: c.$white;
     position: relative;
+    margin-bottom: 88px;
 }
 
 .banner__img {
@@ -54,5 +55,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner {
+        margin-bottom: 112px;
     }
 }

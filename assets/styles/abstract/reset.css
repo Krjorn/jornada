@@ -51,7 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-button {
+button, input, textarea {
 	border: 0 none;
-	cursor: pointer;
 }

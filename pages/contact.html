@@ -49,6 +49,58 @@
             <p class="banner__text">Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!</p>
         </div>
     </section>
+    <main class="main">
+        <section class="form__section">
+            <header class="section__title">
+                <h2 class="section__title--text">Preencha o formulário:</h2>
+                <div class="section__title--underline"></div>
+            </header>
+            <p class="section__desc">Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, trazer dicas e orientações objetivas para tornar sua experiência o mais prazerosa e tranquila possível. Preencha seus dados que vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!</p>
+            <form class="form">
+                <strong class="form__subtitle" aria-hidden="true">Campos com * são obrigatórios!</strong>
+                <fieldset class="form__wrapper">
+                    <div class="form__field">
+                        <label for="name-input" class="form__field--label">Nome completo<span aria-hidden="true"> *</span></label>
+                        <div class="field__input--wrapper">
+                            <input type="text" id="name-input" placeholder="Seu nome..." required class="form__field--input" data-input>
+                            <span class="field__input--error" aria-hidden="true" data-input-error></span>
+                        </div>
+                    </div>
+                    <fieldset class="form__field--compound">
+                        <div class="form__field">
+                            <label for="tel-input" class="form__field--label">Telefone</label>
+                            <div class="field__input--wrapper">
+                                <input type="text" id="tel-input" placeholder="(11) 12345-5432" class="form__field--input" data-input>
+                                <span class="field__input--error" aria-hidden="true" data-input-error></span>
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <label for="email-input" class="form__field--label">Email<span aria-hidden="true"> *</span></label>
+                            <div class="field__input--wrapper">
+                                <input type="email" id="email-input" placeholder="seuemail@email.com" required class="form__field--input" data-input>
+                                <span class="field__input--error" aria-hidden="true" data-input-error></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form__field">
+                        <label for="subject-input" class="form__field--label">Assunto<span aria-hidden="true"> *</span></label>
+                        <div class="field__input--wrapper">
+                            <input type="text" id="subject-input" placeholder="Depoimento" required class="form__field--input" data-input>
+                            <span class="field__input--error" aria-hidden="true" data-input-error></span>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="message-input" class="form__field--label">Mensagem<span aria-hidden="true"> *</span></label>
+                        <div class="field__input--wrapper">
+                            <textarea name="" id="message-input" cols="30" rows="10" placeholder="Sua mensagem..." required class="form__field--textarea" data-input></textarea>
+                            <span class="field__input--error" aria-hidden="true" data-input-error></span>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar!" class="cta-button changing">
+            </form>
+        </section>
+    </main>
     <picture>
         <source media="(max-width: 360px)" srcset="../assets/img/pre-footer/pre-footer-contact-360.png">
         <source media="(max-width: 768px)" srcset="../assets/img/pre-footer/pre-footer-contact-768.png">
@@ -79,5 +131,6 @@
         </div>
     </footer>
     <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/form.js"></script>
 </body>
 </html>

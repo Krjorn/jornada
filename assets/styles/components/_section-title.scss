@@ -18,6 +18,17 @@
     margin-top: 16px;
 }
 
+.section__desc {
+    @include t.body;
+    margin-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+    .section__desc {
+        @include t.body-l;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .section__title {
         margin-bottom: 64px;

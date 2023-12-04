@@ -140,7 +140,7 @@ img {
   width: 280px;
   display: inline-block;
   border-radius: 8px;
-  background-color: #B81515;
+  background-color: #B82D2D;
   padding: 16px 0;
   font-size: 1.25rem;
   font-weight: 700;
@@ -150,7 +150,7 @@ img {
   cursor: pointer;
 }
 .cta-button:hover, .cta-button:focus {
-  background-color: #8F0101;
+  background-color: #9B2222;
 }
 
 .cta-button.changing {
@@ -175,7 +175,7 @@ img {
 .section__title--underline {
   width: 180px;
   height: 4px;
-  background-color: #B81515;
+  background-color: #B82D2D;
   margin: 0 auto;
   margin-top: 16px;
 }
